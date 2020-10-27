@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JhonnyZapataExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label x:Name="lblUsuario" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Resumen de pago mensual:" FontSize="Title" Padding="30,10,30,10"/>
+            <Grid x:Name="grid" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" ></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="10"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label   Grid.Row="0" Grid.Column="0" Text="Nombre" FontSize="20" HorizontalOptions="Center"></Label>
+                <Entry  Grid.Row="0" Grid.Column="1" IsEnabled="False" x:Name="txtNombreR"></Entry>
+
+                <Label   Grid.Row="1" Grid.Column="0" Text="Monto inicial" FontSize="20" HorizontalOptions="Center"></Label>
+                <Entry  Grid.Row="1" Grid.Column="1" IsEnabled="False" Keyboard="Numeric" x:Name="txtMontoI"></Entry>
+
+                <Label   Grid.Row="2" Grid.Column="0" Text="Pago mensual" FontSize="20" HorizontalOptions="Center"></Label>
+                <Entry  Grid.Row="2" Grid.Column="1" IsEnabled="False" Keyboard="Numeric" x:Name="txtPagoM"></Entry>
+
+
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
